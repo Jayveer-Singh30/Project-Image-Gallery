@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1> ✨ Image Gallery</h1>
+        <p>Explore our collection of beautiful images</p>
+    </div>
+
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="people">People</button>
+        <button class="filter-btn" data-filter="art">Art</button>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery" id="gallery">
+            <!-- Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop"
+                    alt="Mountain landscape">
+                <div class="gallery-item-content">
+                    <div class="category-tag">Nature</div>
+                    <h3>Mountain Vista</h3>
+                    <p>A breathtaking view of snow-capped mountains against a clear blue sky.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop"
+                    alt="Forest path">
+                <div class="gallery-item-content">
+                    <div class="category-tag">Nature</div>
+                    <h3>Forest Path</h3>
+                    <p>A mysterious path winding through a dense, green forest.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop"
+                    alt="Ocean waves">
+                <div class="gallery-item-content">
+                    <div class="category-tag">Nature</div>
+                    <h3>Ocean Waves</h3>
+                    <p>Powerful waves crashing against rocky cliffs at sunset.</p>
+                </div>
+            </div>
+
+            <!-- City Images -->
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop"
+                    alt="City skyline">
+                <div class="gallery-item-content">
+                    <div class="category-tag">City</div>
+                    <h3>City Lights</h3>
+                    <p>A vibrant city skyline illuminated against the night sky.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&h=400&fit=crop"
+                    alt="Modern architecture">
+                <div class="gallery-item-content">
+                    <div class="category-tag">City</div>
+                    <h3>Modern Architecture</h3>
+                    <p>Sleek lines and geometric patterns of contemporary buildings.</p>
+                </div>
+            </div>
+
+            <!-- People Images -->
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop"
+                    alt="Portrait">
+                <div class="gallery-item-content">
+                    <div class="category-tag">People</div>
+                    <h3>Portrait Study</h3>
+                    <p>A captivating portrait showcasing human expression and emotion.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=250&fit=crop"
+                    alt="Street photography">
+                <div class="gallery-item-content">
+                    <div class="category-tag">People</div>
+                    <h3>Street Life</h3>
+                    <p>Candid moments captured in the bustling energy of city streets.</p>
+                </div>
+            </div>
+
+            <!-- Art Images -->
+            <div class="gallery-item" data-category="art">
+                <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=250&fit=crop"
+                    alt="Abstract art">
+                <div class="gallery-item-content">
+                    <div class="category-tag">Art</div>
+                    <h3>Abstract Expression</h3>
+                    <p>Bold colors and flowing forms create an emotional visual experience.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="art">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop"
+                    alt="Digital art">
+                <div class="gallery-item-content">
+                    <div class="category-tag">Art</div>
+                    <h3>Digital Creation</h3>
+                    <p>A stunning piece of digital art blending technology and creativity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h2 class="lightbox-title" id="lightbox-title"></h2>
+                <p class="lightbox-description" id="lightbox-description"></p>
+            </div>
+        </div>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#8249;</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next">&#8250;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
